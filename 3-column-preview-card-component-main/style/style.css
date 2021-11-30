@@ -96,7 +96,23 @@ article {
     border-radius: 9999em;
 }
 
+.box a:active {
+    color: var(--very-light-gray) !important;
+    border: 1.5px var(--very-light-gray) solid;
+}
+
 .button {
     margin: 55px 0 0;
 }
 
+@media screen and (max-width: 500px){
+    body {
+        height: 100%
+    }
+
+    .grid-container{
+        margin: 100px 0;
+        grid-template-columns: 290px;
+        grid-template-rows: repeat(3, 450px);
+    }
+}
