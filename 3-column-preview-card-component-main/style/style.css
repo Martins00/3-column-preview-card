@@ -1,0 +1,113 @@
+:root {
+    --bright-orange : hsl(31, 77%, 52%);
+    --dark-cyan : hsl(184, 100%, 22%);
+    --very-dark-cyan : hsl(179, 100%, 13%);
+    --transparent-white : hsla(0, 0%, 100%, 0.75);
+    --very-light-gray : hsl(0, 0%, 95%);
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--very-light-gray);
+    color: var(--transparent-white);
+    height: 100vh;
+    width: 100%;
+    font-family: "Big Shoulders Display", cursive;
+    font-family: "Lexend Deca", sans-serif;
+    font-size: 15px;
+    border-radius: 10px;
+}
+
+article {
+    border-radius: 10px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 260px);
+    grid-template-rows: 450px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.box {
+    padding: 35px;
+}
+
+#sedans {
+    background-color: var(--bright-orange);    
+}
+
+#sedans a {
+    color: var(--bright-orange);
+}
+
+#suv {
+    background-color: var(--dark-cyan);        
+}
+
+#suv a {
+    color: var(--dark-cyan);         
+}
+
+#luxury {
+    background-color: var(--very-dark-cyan);      
+}
+
+#luxury a {
+    color: var(--very-dark-cyan);      
+}
+
+#sedans a:active, #suv a:active #luxury a:active {
+    background-color: inherit;
+    cursor: pointer;
+}
+
+.box h1 {
+    font-family: "Big Shoulders Display", cursive;
+    color: var(--very-light-gray);
+    margin: 20px 0;
+    text-transform: uppercase;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.box p {
+    font-family: "Lexend Deca", sans-serif;
+    color: var(--transparent-white);
+    font-size: 15px;
+    line-height: 1.7;
+    padding: 10px 0 30px;
+    
+}
+
+.box a {
+    text-decoration: none;
+    background-color: var(--very-light-gray);
+    padding: 10px 20px;
+    border-radius: 9999em;
+}
+
+.button {
+    margin: 55px 0 0;
+}
+
+
+/*
+.attribution { 
+    font-size: 11px; 
+    text-align: center;
+ }
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+*/
